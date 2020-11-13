@@ -1,0 +1,67 @@
+/*ナビゲーションバー */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #1b2538;
+}
+li {
+	float: left;
+	border-right: 1px solid #bbbbbb;
+}
+li:last-child {
+	border-right: none;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(.active) {
+	background-color: #a9bce2;
+}
+.active {
+	background-color: #da3c41;
+}
+/*ナビゲーションバー ここまで*/
+
+/* inputを非表示 */
+.c-radio {
+    display: none;
+  }
+  
+  /* ボタン */
+  .btn {
+    /*　省略　*/
+  }
+  
+  /* リスト（カードの時） */
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 40px auto 0;
+  }
+  .card__item {
+    width: calc(25% - 15px);/* 20px*3/4 */
+    height: 100%;
+    margin: 0 0 20px 20px;
+    background: #3B4144;
+  }
+  .card__item:before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;/* 16:9 */
+  }
+  .card__item:nth-child(4n+1) {
+    margin-left: 0;
+  }
+  
+  /* リスト（シングルの時） */
+  #single:checked ~ .card .card__item {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
