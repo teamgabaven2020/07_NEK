@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>サポートアプリ</title>
+
+    <link rel="stylesheet" href="css/calendar.css">
+
+</head>
+<body>
+  <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+  <ul>
+      <li><a class="active" href="mypage.html">時間割</a></li>
+      <li><a href="chat.html">チャット</a></li>
+      <li><a href="credits.html">単位</a></li>
+      <li><a href="imfomation.html">情報</a></li>
+  </ul>
+  <script type="text/javascript" src="js/calender.js" charset="UTF-8"></script>
+
+<div id="cal1" style="padding:10px"></div>
+<div id="cal2" style="padding:10px"></div>
+<script type="text/javascript">
+    var yy, mm;
+    // 今月
+    today = new Date();
+    // 特定の年月の表示をする場合
+    //	today.setMonth(8);	// 月-1
+    //	today.setFullYear(2018);
+    yy = today.getFullYear();
+    mm = today.getMonth() + 1;
+    document.getElementById('cal1').innerHTML = put_calender(yy, mm, 'cal', 'hcal', '', '');
+    // 翌月
+    if (mm > 11) {
+        mm = 0;
+        yy += 1;
+        today.setFullYear(yy);
+    }
+    today.setMonth(mm);
+    yy = today.getFullYear();
+    mm = today.getMonth() + 1;
+    document.getElementById('cal2').innerHTML = put_calender(yy, mm, 'cal', 'hcal', '', '');
+    //--></script>
+
+</body>
+    
+    
