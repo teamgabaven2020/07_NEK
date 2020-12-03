@@ -43,21 +43,21 @@ li a:hover:not(.active) {
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    margin: 40px auto 0;
+    margin: 50px auto 0;
   }
   .card__item {
     width: calc(25% - 15px);/* 20px*3/4 */
     height: 100%;
     margin: 0 0 20px 20px;
-    background: #3B4144;
+    background: #bcddee;
   }
   .card__item:before {
-    content: "";
+    content: "講義名";
     display: block;
-    padding-top: 56.25%;/* 16:9 */
+    padding-top: 20%;
   }
   .card__item:nth-child(4n+1) {
-    margin-left: 0;
+    margin-left: 0px;
   }
   
   /* リスト（シングルの時） */
