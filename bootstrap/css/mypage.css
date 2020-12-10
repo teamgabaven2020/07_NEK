@@ -1,0 +1,77 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #17a2b8;
+}
+li {
+	float: left;
+	border-right: 1px solid #bbbbbb;
+}
+li:last-child {
+	border-right: none;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover:not(.active) {
+	background-color: #a9bce2;
+}
+/*!ナビゲーションバーここまで */
+
+/*!時間割 */
+table{
+    width: 90%;
+    border-collapse:separate;
+    border-spacing: 0;
+    margin-left: 30px;
+  }
+  
+  table th:first-child{
+    border-radius: 5px 0 0 0;
+  }
+  
+  table th:last-child{
+    border-radius: 0 5px 0 0;
+    border-right: 1px solid #1c2129
+  }
+  
+  table th{
+    text-align: center;
+    color:white;
+    background: linear-gradient(#829ebc,#4c5b69);
+    border-left: 1px solid #7d8b99;
+    border-top: 1px solid #8fa0b1;
+    border-bottom: 1px solid #93a3b3;
+    box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+    width: 10%;
+    padding: 10px 0;
+  }
+  
+  table td{
+    text-align: center;
+    border-left: 1px solid #a8b7c5;
+    border-bottom: 1px solid #a8b7c5;
+    border-top:none;
+    box-shadow: 0px -3px 5px 1px #eee inset;
+    width: 10%;
+    padding: 10px 0;
+  }
+  
+  table td:last-child{
+    border-right: 1px solid #a8b7c5;
+  }
+  
+  table tr:last-child td:first-child {
+    border-radius: 0 0 0 5px;
+  }
+  
+  table tr:last-child td:last-child {
+    border-radius: 0 0 5px 0;
+  }
+  /*!時間割ここまで */
