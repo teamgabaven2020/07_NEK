@@ -1,3 +1,13 @@
+/*画像 */
+.img2{
+	margin-top: 30px;
+	margin-left: 280px
+}
+
+.img3{
+	margin-top: 30px;
+	margin-left: 30px;
+}
 /*ナビゲーションバー */
 ul {
 	list-style-type: none;
