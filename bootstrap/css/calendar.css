@@ -4,7 +4,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #1b2538;
+	background-color: #17a2b8;
 }
 li {
 	float: left;
@@ -23,9 +23,7 @@ li a {
 li a:hover:not(.active) {
 	background-color: #a9bce2;
 }
-.active {
-	background-color: #da3c41;
-}/*カレンダー用テーブル
+/*カレンダー用テーブル
 ---------------------------------------------------------------------------*/
 /*テーブル全体の設定*/
 .cal {
